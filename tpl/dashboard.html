@@ -1,10 +1,49 @@
 <!--  START CONTAINER FLUID -->
+
 <div class="container-fluid padding-25 sm-padding-10 sm-gutter">
+
+  <div class="row m-b-20">
+    <div class="col-md-6 p-l-20">
+      <h3 class="no-margin bold">The Pulse Of Your Business</h3>
+      <p class="small hint-text">The perfect overview of how your doing...</p>
+    </div>
+    <div class="col-md-6 p-r-20 p-t-15" style="text-align: right;" >
+
+      <select class="cs-select cs-skin-slide" cs-select>
+          <option value="websafe">All Funnels</option>
+          <option value="helvetica">Today</option>
+          <option value="segeoUI">Custom Date Range</option>
+      </select>
+
+      <select class="cs-select cs-skin-slide" cs-select>
+          <option value="websafe">Last 7 Days</option>
+          <option value="helvetica">Today</option>
+          <option value="segeoUI">Custom Date Range</option>
+      </select>
+
+    </div>
+  </div>
+
+
     <!-- START ROW -->
     <div class="row">
 
-            <!-- END WIDGET -->
-        </div>
+      <!-- TOP AREA - STATS -->
+      <div class="col-md-6">
+        <!-- stat blocks -->
+        <div ng-include=" 'tpl/dashboard/top_stats.html'"></div>
+      </div>
+
+      <div class="col-md-6">
+        <!-- stat graph -->
+        <div ng-include=" 'tpl/dashboard/chart.html'"></div>
+      </div>
+
+      <!-- END OF TOP STATS -->
+
+
+
+
     </div>
 </div>
 <!-- END CONTAINER FLUID -->

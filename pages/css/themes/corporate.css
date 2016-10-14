@@ -1077,7 +1077,7 @@ body.rtl [class*="col-"] {
 .page-container .page-content-wrapper .content {
   /* Content holder */
   z-index: 10;
-  padding-top: 60px;
+  /*padding-top: 60px;*/
   padding-bottom: 72px;
   min-height: 100%;
   -webkit-transition: all 0.3s ease;
@@ -2214,6 +2214,14 @@ body.rtl [class*="col-"] {
 .product-sidebar-link .icon-thumbnail{
   background-color: transparent;
   /*color: #FFF;*/
+}
+
+.bar-stat-increase{
+  background-color: #03AE78 !important;
+}
+
+.bar-stat-decrease{
+  background-color: #f55753 !important;
 }
 
 /*------------------------------------------------------------------
