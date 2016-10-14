@@ -11306,6 +11306,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/pages\/img\/logo-bold.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26624,
+		"inputAbbreviatedPath": "\/pages\/img\/logo-bold.png",
+		"outputAbbreviatedPath": "\/pages\/img\/logo-bold.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/pages\/img\/notes_lines.png": {
 		"fileType": 32768,
 		"ignore": 0,

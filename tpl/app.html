@@ -14,7 +14,7 @@
     <div class="page-content-wrapper" ng-class="{'full-height': includes('app.email') || includes('app.calendar') }" ng-hide="is('app.builder')">
         <!-- START PAGE CONTENT -->
         <div class="content" ng-class="{
-        'overlay-footer top-left bottom-right': is('app.maps.google') || is('app.maps.vector'), 
+        'overlay-footer top-left bottom-right': is('app.maps.google') || is('app.maps.vector'),
         'full-height' : includes('app.email')
     }">
             <div class="full-height full-width" ui-view>
@@ -29,8 +29,10 @@
 </div>
 <!-- END PAGE CONTAINER -->
 <!--START QUICKVIEW -->
-<div ng-include src=" 'tpl/blocks/quick_view.html' " include-replace>
-</div>
+
+  <!-- <div ng-include src=" 'tpl/blocks/quick_view.html' " include-replace>
+  </div> -->
+
 <!-- END QUICKVIEW-->
 
 <div ng-if="includes('app.builder')" ng-include=" 'tpl/blocks/builder_options.html'">
