@@ -1,0 +1,52 @@
+<div class="container-fluid padding-25 sm-padding-10 container-blue-header sm-gutter">
+
+  <div class="row">
+    <div class="col-md-6 ">
+
+      <div class="media clearfix">
+          <div class="media-left p-r-20">
+            <a href="#">
+              <img class="media-object" src="https://cdn1.iconfinder.com/data/icons/unigrid-bluetone-multimedia-vol-4/60/020_169_mail_email_envelope_message-48.png">
+            </a>
+          </div>
+          <div class="media-body">
+            <h3 class="no-margin bold">Contacts</h3>
+            <p class="small hint-text" style="margin-top: -3px;" >all of your beautiful peoples...</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-6  p-t-5" style="text-align: right;" >
+
+      <button class="btn btn-primary btn-animated from-left fa fa-plus" type="button">
+          <span>Add Contact</span>
+      </button>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid padding-25 sm-padding-10 sm-gutter p-b-35" style="padding-top: 5px !important;">
+
+  <!-- search / filter contacts -->
+  <div class="panel m-t-20 panel-default">
+    <div class="panel-body">
+
+      <label class="bold">Search Contacts</label>
+
+      <div class="form-group input-group">
+        <input type="text" class="form-control" placeholder="search email, name, city, etc...">
+        <span class="input-group-addon secondary">
+          filter contacts
+          <i class="pg pg-arrow_down"></i>
+        </span>
+      </div>
+    </div>
+</div>
+
+  <!-- dummy funnel listings -->
+  <div ng-include=" 'tpl/contacts/all_contacts.html'"></div>
+
+</div>

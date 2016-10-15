@@ -2182,49 +2182,6 @@ body.rtl [class*="col-"] {
 }
 
 /*------------------------------------------------------------------
-[32. Custom CF CSS]
-*/
-/* Special CF Styles elements
---------------------------------------------------
-*/
-
-.menu-items .icon-thumbnail{
-  border-radius: 2px;
-}
-
-.menu-items .active .icon-thumbnail{
-  background-color: #2D86CE;
-}
-
-.product-sidebar-link{
-  /*background-color: rgba(0, 0, 0, 0.2);*/
-  background-color: #28282C;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-  height: 40px;
-}
-
-.product-sidebar-link a{
-  /*background-color: #2D86CE;*/
-  /*color: #FFF;*/
-  text-transform: uppercase;
-}
-
-.product-sidebar-link .icon-thumbnail{
-  background-color: transparent;
-  /*color: #FFF;*/
-}
-
-.bar-stat-increase{
-  background-color: #03AE78 !important;
-}
-
-.bar-stat-decrease{
-  background-color: #f55753 !important;
-}
-
-/*------------------------------------------------------------------
 [5. Typography]
 */
 /* Standard elements
@@ -2990,8 +2947,8 @@ Alternate buttons
 .btn-primary,
 .btn-primary:focus {
   color: #fff;
-  background-color: #6d5eac;
-  border-color: #6d5eac;
+  background-color: #2D86CE;
+  border-color: #2D86CE;
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -2999,20 +2956,20 @@ Alternate buttons
 .btn-primary:active:focus,
 .btn-primary:active:hover,
 .open .dropdown-toggle.btn-primary {
-  background-color: #584c8b;
-  border-color: #584c8b;
+  background-color: rgba(24, 64, 97, 1);
+  border-color: rgba(24, 64, 97, 1);
   color: #fff;
 }
 .btn-primary.hover,
 .btn-primary:hover,
 .open .dropdown-toggle.btn-primary {
-  background-color: #8a7ebd;
-  border-color: #8a7ebd;
+  background-color: rgba(24, 64, 97, 1);
+  border-color: rgba(24, 64, 97, 1);
   color: #fff;
 }
 .btn-primary.active:hover {
-  background: #5e5194;
-  border-color: #5e5194;
+  background: rgba(24, 64, 97, 1);
+  border-color: rgba(24, 64, 97, 1);
 }
 .btn-primary.disabled,
 .btn-primary[disabled],
@@ -13781,4 +13738,114 @@ Main components
     opacity: 0.8;
     background-size: 114px 29px;
   }
+}
+
+/*------------------------------------------------------------------
+[32. Custom CF CSS]
+*/
+/* Special CF Styles elements
+--------------------------------------------------
+*/
+
+.btn{
+  font-weight: bold !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.15) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.btn-secondary{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-primary{
+  background-color: #2D86CE;
+}
+
+.menu-items .icon-thumbnail{
+  border-radius: 2px;
+}
+
+.menu-items .active .icon-thumbnail{
+  background-color: #2D86CE;
+}
+
+.product-sidebar-link{
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  background-color: #28282C;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.product-sidebar-link a{
+  /*background-color: #2D86CE;*/
+  /*color: #FFF;*/
+  text-transform: uppercase;
+}
+
+.product-sidebar-link .icon-thumbnail{
+  background-color: transparent;
+  /*color: #FFF;*/
+}
+
+.bar-stat-increase{
+  background-color: #03AE78 !important;
+}
+
+.bar-stat-decrease{
+  background-color: #f55753 !important;
+}
+
+.panel-cf-item{
+  border: 1px solid rgba(221, 221, 221, 0.7) !important;
+  border-top: none !important;
+  /*box-shadow: 0 2px 2px rgba(0,0,0,0.02) !important;*/
+  margin-bottom: 0px;
+}
+
+.panel-cf-item:hover{
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05) !important;
+}
+
+.panel-cf-item .panel-body{
+  padding: 10px 15px !important;
+}
+
+.panel-cf-item .small{
+  margin-bottom: 0px;
+}
+
+.panel-left-icon{
+  padding-right: 20px;
+  border-right: 1px solid #eee;
+  margin-right: 20px;
+}
+
+.panel-cf-funnel-group{
+  /*text-align: center;*/
+  font-size: 12px;
+  color: rgba(117, 117, 117, 0.8);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: rgba(221, 221, 221, 0.3);
+  margin-bottom: 0px;
+}
+
+.panel-cf-funnel-group .panel-body{
+  padding: 10px 10px;
+}
+
+.container-blue-header{
+  background-color: #1D68AA;
+  padding-bottom: 15px !important;
+}
+
+.container-blue-header h3{
+  color: #FFF;
+}
+
+.container-blue-header .small{
+  color: rgba(255, 255, 255, 0.8);
 }

@@ -381,6 +381,18 @@ angular.module('app')
                 templateUrl: 'tpl/views.html'
             })
 
+            // Funnels
+            .state('app.funnels', {
+                url: '/funnels',
+                templateUrl: 'tpl/funnels.html'
+            })
+
+            // Contacts
+            .state('app.contacts', {
+                url: '/contacts',
+                templateUrl: 'tpl/contacts.html'
+            })
+
             // Tables
             .state('app.tables', {
                     url: '/tables',
