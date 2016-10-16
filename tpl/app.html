@@ -5,7 +5,7 @@
 <!-- START PAGE-CONTAINER -->
 <div class="page-container" ng-class="{'bg-white':is('app.calendar')}">
     <!-- START PAGE HEADER WRAPPER -->
-    <div ng-hide="is('app.calendar')" ng-include=" 'tpl/blocks/header.html' ">
+    <div ng-hide="is('app.calendar')" ng-include=" 'tpl/blocks/header.html' " class="hide">
     </div>
     <!-- END PAGE HEADER WRAPPER -->
     <div ng-if="is('app.calendar')" ng-include=" 'tpl/apps/calendar/mobile_controls.html' ">

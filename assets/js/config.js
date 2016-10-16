@@ -393,6 +393,12 @@ angular.module('app')
                 templateUrl: 'tpl/contacts.html'
             })
 
+            // Single Contact
+            .state('app.view_contact', {
+                url: '/contact/view',
+                templateUrl: 'tpl/single_contact.html'
+            })
+
             // Tables
             .state('app.tables', {
                     url: '/tables',
