@@ -1,31 +1,26 @@
-<div class="container-fluid padding-25 sm-padding-10 container-blue-header sm-gutter">
+<div class="container-fluid padding-10 p-l-25 p-r-25 sm-padding-10 container-blue-header sm-gutter">
 
   <div class="row">
+
     <div class="col-md-6 ">
 
-      <div class="media clearfix">
-          <!-- <div class="media-left p-r-20">
-            <a href="#">
-              <img src="https://img.buzzfeed.com/buzzfeed-static/static/2015-02/1/22/enhanced/webdr11/enhanced-4865-1422847728-16.jpg" style="height: 48px; width: 48px;" class="media-object img-circle">
-            </a>
-          </div> -->
-          <div class="media-body">
-            <h3 class="no-margin bold">Tiger Nixon</h3>
-            <p class="small hint-text" style="margin-top: -3px;" >asdsaas  s</p>
-        </div>
+      <div class="cfbread">
+        <h3><a ui-sref="app.contacts">Contacts</a></h3>
+        <h3 class="cfbread-slash"><i class="pg pg-arrow_right"></i></h3>
+        <h3 class="no-margin bold">Tiger Nixon</h3>
       </div>
 
     </div>
 
-    <div class="col-md-6  p-t-5" style="text-align: right;" >
+    <div class="col-md-6" style="text-align: right;" >
 
-      <button class="btn btn-primary btn-top-primary btn-animated from-left fa fa-plus" type="button">
+      <!-- <button class="btn btn-primary btn-top-primary btn-animated from-left fa fa-plus" type="button">
           <span>Export CSV</span>
       </button>
 
       <button class="btn btn-primary btn-top-primary btn-animated from-left fa fa-plus" type="button">
           <span>Add Contact</span>
-      </button>
+      </button> -->
 
     </div>
   </div>
@@ -39,7 +34,7 @@
       <div class="col-md-12">
         <div class="panel panel-white">
 
-          <ul class="nav nav-tabs nav-tabs-fillup">
+          <ul class="nav nav-top-page nav-tabs nav-tabs-fillup">
             <li class="active">
               <a role="tab" data-toggle="tab" href="#generalinfo" pg-tab ><i class="pg pg-layouts3"></i> Contact Info</a>
             </li>
@@ -56,7 +51,7 @@
 
           <div class="tab-content no-padding" style="background: #F0F1F3 !important;">
 
-            <div class="tab-pane active" id="generalinfo">
+            <div class="tab-pane padding-25 active" id="generalinfo">
 
               <div ng-include=" 'tpl/contacts/editinfo.html'"></div>
 

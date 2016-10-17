@@ -13777,7 +13777,8 @@ Main components
 
 .product-sidebar-link{
   /*background-color: rgba(0, 0, 0, 0.2);*/
-  background-color: #28282C;
+  /*background-color: #28282C;*/
+  background-color: rgba(40, 40, 44, 0.65);
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
@@ -13793,6 +13794,10 @@ Main components
 .product-sidebar-link .icon-thumbnail{
   background-color: transparent;
   /*color: #FFF;*/
+}
+
+.page-sidebar .sidebar-header{
+  background-color: rgba(40, 40, 44, 0.65);
 }
 
 .bar-stat-increase{
@@ -13845,7 +13850,9 @@ Main components
 
 .container-blue-header{
   background-color: #1D68AA;
-  padding-bottom: 15px !important;
+  /*padding-bottom: 15px !important;*/
+  padding: 10px 25px;
+  min-height: 60px;
 }
 
 .container-blue-header h3{
@@ -13867,4 +13874,81 @@ Main components
 
 .top-page-nav .nav-tabs a i{
   margin-right: 5px;
+}
+
+.cf-input{
+  border: 1px solid #b4becd !important;
+  border-top-color: #b0baca !important;
+  border-bottom-color: #d3d9e2 !important;
+  box-shadow: inset 0 1px 2px rgba(130, 137, 150, 0.23), 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+  font-weight: bold;
+  color: #4e5b68;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.cf-input:focus{
+  border: 1px solid rgba(69, 140, 207, 0.85) !important;
+  background: #FFF;
+}
+
+.page-sidebar{
+  box-shadow: inset -1px 0 2px 1px rgba(0,0,0,0.3);
+}
+
+.top-cf-white-drop-shadow{
+  border: 0px;
+  border-bottom: 1px solid rgba(176, 186, 202, 0.56) !important;
+  box-shadow: 0 1px 3px rgba(176,186,202,0.2);
+}
+
+.nav-tabs-fillup > li.active > a, .nav-tabs-fillup > li.active > a:hover, .nav-tabs-fillup > li.active > a:focus{
+  background: #F0F1F3;
+  color: #575757;
+}
+
+.nav-tabs-fillup > li > a:after{
+  background: none repeat scroll 0 0 #F0F1F3;
+  border: 1px solid #F0F1F3;
+}
+
+.cfbread h3{
+  display: inline;
+  font-size: 21px;
+  line-height: 40px;
+}
+
+.cfbread h3.cfbread-slash i{
+  margin-left: 5px;
+  margin-right: 5px;
+  color: rgba(39, 39, 39, 0.35);
+}
+
+.cfbread h3 a{
+  color: #FFF;
+}
+
+.cfbread h3 a:hover{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container-blue-header .btn{
+    margin-top: 2px;
+}
+
+.nav-top-page{
+  min-height: 60px;
+}
+
+.nav-top-page li a{
+  line-height: 30px;
+  padding: 15px 25px;
+}
+
+.page-container .page-content-wrapper{
+  overflow-x: hidden;
+  /* NOT SURE ABOUT THIS - just to avoid a issue with rows making a horz. scroll bar... */
 }

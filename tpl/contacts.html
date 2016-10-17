@@ -1,23 +1,17 @@
-<div class="container-fluid padding-25 sm-padding-10 container-blue-header sm-gutter">
+<div class="container-fluid sm-padding-10 container-blue-header sm-gutter">
 
   <div class="row">
     <div class="col-md-6 ">
 
-      <div class="media clearfix">
-          <!-- <div class="media-left p-r-20">
-            <a href="#">
-              <img class="media-object" src="https://cdn1.iconfinder.com/data/icons/unigrid-bluetone-multimedia-vol-4/60/020_169_mail_email_envelope_message-48.png">
-            </a>
-          </div> -->
-          <div class="media-body">
-            <h3 class="no-margin bold">Contacts</h3>
-            <p class="small hint-text" style="margin-top: -3px;" >all of your beautiful peoples...</p>
-        </div>
+      <div class="cfbread">
+        <h3><a ui-sref="app.contacts">Contacts</a></h3>
+        <h3 class="cfbread-slash"><i class="pg pg-arrow_right"></i></h3>
+        <h3 class="no-margin bold">All</h3>
       </div>
 
     </div>
 
-    <div class="col-md-6  p-t-5" style="text-align: right;" >
+    <div class="col-md-6" style="text-align: right;" >
 
       <button class="btn btn-primary btn-top-primary btn-animated from-left fa fa-plus" type="button">
           <span>Export CSV</span>
@@ -32,59 +26,104 @@
 
 </div>
 
+<div class="container-fluid no-padding sm-gutter top-page-nav">
+
+  <div class="row">
+
+      <div class="col-md-12">
+        <div class="panel panel-white">
+
+          <ul class="nav nav-top-page nav-tabs nav-tabs-fillup">
+            <li class="active">
+              <a role="tab" data-toggle="tab" href="#generalinfo" pg-tab ><i class="pg pg-layouts3"></i> All Contacts</a>
+            </li>
+            <li>
+              <a role="tab" data-toggle="tab" href="#edit" pg-tab ><i class="pg pg-settings_small"></i> Subscribers</a>
+            </li>
+            <li>
+              <a role="tab" data-toggle="tab" href="#myTab" pg-tab ><i class="pg pg-shopping_cart"></i> Refunders</a>
+            </li>
+            <li>
+              <a role="tab" data-toggle="tab" href="#myTab" pg-tab ><i class="pg pg-more"></i> Add Group</a>
+            </li>
+          </ul>
+
+          <div class="tab-content no-padding" style="background: #F0F1F3 !important;">
+
+            <div class="tab-pane padding-25 active" id="generalinfo">
+
+              <!-- START OF ALL Contacts -->
+              <div class="row m-t-0">
+
+                <div class="col-md-12">
+
+                  <!-- search / filter contacts -->
+                  <div class="panel top-cf-white-drop-shadow panel-default">
+                    <div class="panel-body">
+
+                        <!-- <label class="bold">Search Contacts</label> -->
+
+                        <div class="form-group input-group no-margin">
+                          <input type="text" class="form-control cf-input" placeholder="search email, name, city, etc...">
+                          <span class="input-group-addon secondary">
+                            filter contacts
+                            <i class="pg pg-arrow_down"></i>
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+                  <div class="panel no-border margin-20 widget-loader-bar">
+                      <div class="container-xs-height">
+                          <div class="row-xs-height">
+                              <div class="col-xs-height col-top">
+                                  <div class="panel-heading  top-left top-right">
+                                      <div class="panel-title text-black">
+                                          <span class=" fs-11 all-caps">contacts</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row-xs-height">
+                              <div class="col-xs-height col-top">
+                                  <div class="p-l-20 p-t-40 p-b-10 p-r-20">
+                                      <h1 class="no-margin p-b-5">3</h1>
+                                  </div>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+              <!-- dummy funnel listings -->
+              <div ng-include=" 'tpl/contacts/all_contacts.html'"></div>
+              <!-- END  -->
+
+            </div>
+
+            <div class="tab-pane" id="edit">
+              info
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+  </div>
+
+</div>
+
 <div class="container-fluid no-padding sm-gutter">
 
-  <div class="row m-t-0">
 
-    <div class="col-md-12">
-
-      <!-- search / filter contacts -->
-      <div class="panel panel-default">
-        <div class="panel-body">
-
-            <!-- <label class="bold">Search Contacts</label> -->
-
-            <div class="form-group input-group">
-              <input type="text" class="form-control" placeholder="search email, name, city, etc...">
-              <span class="input-group-addon secondary">
-                filter contacts
-                <i class="pg pg-arrow_down"></i>
-              </span>
-            </div>
-          </div>
-      </div>
-
-    </div>
-
-
-    <div class="col-md-3">
-      <div class="panel no-border margin-20 widget-loader-bar">
-          <div class="container-xs-height">
-              <div class="row-xs-height">
-                  <div class="col-xs-height col-top">
-                      <div class="panel-heading  top-left top-right">
-                          <div class="panel-title text-black">
-                              <span class=" fs-11 all-caps">contacts</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="row-xs-height">
-                  <div class="col-xs-height col-top">
-                      <div class="p-l-20 p-t-40 p-b-10 p-r-20">
-                          <h1 class="no-margin p-b-5">3</h1>
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-      
-
-    </div>
-
-  </div>
-  <!-- dummy funnel listings -->
-  <div ng-include=" 'tpl/contacts/all_contacts.html'"></div>
 
 </div>

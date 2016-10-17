@@ -1,25 +1,19 @@
-<div class="container-fluid padding-25 sm-padding-10 container-blue-header sm-gutter">
+<div class="container-fluid sm-padding-10 container-blue-header sm-gutter">
 
   <div class="row">
     <div class="col-md-6 ">
 
-      <div class="media clearfix">
-          <!-- <div class="media-left p-r-20">
-            <a href="#">
-              <img class="media-object" src="https://cdn2.iconfinder.com/data/icons/smashicons-the-essentials-webby-vol-2/52/86_-_Funnel_interaction_communication_essential-48.png">
-            </a>
-          </div> -->
-          <div class="media-body">
-            <h3 class="no-margin bold">All Your Funnels</h3>
-            <p class="small hint-text" style="margin-top: -3px;" >all of your awesome funnels...</p>
-        </div>
+      <div class="cfbread">
+        <h3><a ui-sref="app.contacts">Funnels</a></h3>
+        <h3 class="cfbread-slash"><i class="pg pg-arrow_right"></i></h3>
+        <h3 class="no-margin bold">All</h3>
       </div>
 
     </div>
 
-    <div class="col-md-6  p-t-5" style="text-align: right;" >
+    <div class="col-md-6" style="text-align: right;" >
 
-      <button class="btn btn-primary btn-animated from-left fa fa-plus" type="button">
+      <button class="btn btn-primary btn-top-primary btn-animated from-left fa fa-plus" type="button">
           <span>Create New Funnel</span>
       </button>
 
@@ -33,9 +27,9 @@
   <div class="row">
 
     <div class="col-md-12">
-      <div class="panel panel-transparent">
+      <div class="panel panel-white">
 
-        <ul class="nav nav-tabs nav-tabs-fillup" style="background-color: #fff;">
+        <ul class="nav nav-top-page  nav-tabs nav-tabs-fillup" >
           <li class="active">
             <a data-toggle="tab" href="#"><i class="fa fa-bars"></i> All Funnels</a>
           </li>
@@ -50,9 +44,9 @@
           </li>
         </ul>
 
-        <div class="tab-content no-padding" style="">
+        <div class="tab-content no-padding" style="background: #F0F1F3 !important;">
 
-          <div class="tab-pane active" id="allFunnels">
+          <div class="tab-pane panel-transparent padding-25 active" id="allFunnels">
             <!-- dummy funnel listings -->
             <div ng-include=" 'tpl/funnel/all_funnels.html'"></div>
           </div>
